@@ -50,6 +50,7 @@ class Role extends Component
 
         $arrayColumn = [
                 'No'        => 'id',
+                'Level'     => 'id',
                 'Name Role' => 'name_role',
                 'Created At'=> 'created_at'
             ];

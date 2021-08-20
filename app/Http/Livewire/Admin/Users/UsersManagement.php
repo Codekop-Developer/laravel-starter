@@ -42,13 +42,19 @@ class UsersManagement extends Component
         if(!empty($this->search))
         {
             $search = '%'.$this->search.'%';
-            $tables = User::whereRaw('email like ? or name like ? or phone like ?', [
+            $tables = DB::table('users')
+                        ->leftJoin('users_role','users.roles','=','users_role.id')
+                        ->select('users_role.name_role','users.*')
+                        ->whereRaw('users.email like ? or users.name like ? or users.phone like ?', [
                                 $search, $search, $search
                             ])->orderBy($this->sortField, $this->sortBy)
                             ->paginate($this->paginate);
 
         }else{
-            $tables = User::orderBy($this->sortField, $this->sortBy)
+            $tables = DB::table('users')
+                        ->leftJoin('users_role','users.roles','=','users_role.id')
+                        ->select('users_role.name_role','users.*')
+                        ->orderBy($this->sortField, $this->sortBy)
                         ->paginate($this->paginate);
 
         }
@@ -59,9 +65,8 @@ class UsersManagement extends Component
                 'E-mail'    => 'email',
                 'Name'      => 'name',
                 'Phone'     => 'phone',
-                'Roles'     => 'roles',
+                'Roles'     => 'name_role',
                 'Active'    => 'active',
-                'Created At'=> 'created_at'
             ];
 
         $arraySearch = 'E-mail, Name & Phone';
