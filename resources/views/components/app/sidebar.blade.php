@@ -24,11 +24,6 @@
                             <i class="fas fa-users"></i> <span>User Management</span>
                         </a>
                     </li>
-                    <li>
-                        <a class="nav-link" href="index-0.html">
-                            <i class="fas fa-bars"></i> <span>Menu Management</span>
-                        </a>
-                    </li>
                     <li class="{{ $sidebar == 'role_management' ? 'active' : '' }}">
                         <a class="nav-link" href="{{ url('users/role') }}">
                             <i class="fas fa-ban"></i> <span>Role Management</span>
