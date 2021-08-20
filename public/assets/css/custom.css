@@ -1,0 +1,209 @@
+/**
+ *
+ * You can write your CSS code here, DO NOT touch the default JavaScript file
+ * because it will make it harder for you to update.
+ * 
+ */
+
+/*# sourceMappingURL=custom.css.map */
+body{
+    background: #d8e7f8;
+    color:#444 !important;
+    font-size: 12pt !important;
+}
+
+.btn{
+    font-size: 12pt !important;
+}
+
+.main-footer{
+    background-color: #fff;
+    color:#444;
+}
+.main-sidebar .sidebar-menu li ul.dropdown-menu li a {
+    padding-left: 18px !important;
+    background-color: #f7faff !important;
+}
+
+#loader {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    /* For IE8 and earlier */
+}
+
+.img-loader {
+    position: relative;
+    top: 20%;
+    text-align: center;
+}
+
+.image-lod {
+    width: 40%;
+}
+
+.css-rounded{
+    border-radius: 10px !important;
+}
+
+.card-header-rounded{
+    border-radius: 10px 10px 0 0 !important;
+    font-size: 16pt !important;
+    font-weight: 600;
+}
+
+.card-footer-rounded{
+    border-top:1px solid #ddd;
+    border-radius: 0 0 10px 10px !important;
+    font-size: 16pt !important;
+    font-weight: 600;
+}
+/* Bootstrap 4 text input with search icon */
+
+.has-search .form-control {
+    padding-left: 2pc !important;
+    margin-bottom: -10px;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+/*---------- MEDIA 991px ----------*/
+@media (max-width: 991px) {
+    #loader {
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        opacity: 0.8;
+        filter: alpha(opacity=80);
+        /* For IE8 and earlier */
+    }
+
+    .img-loader {
+        position: relative;
+        top: 30%;
+        text-align: center;
+    }
+
+    .image-lod {
+        width: 50%;
+    }
+
+    .biling {
+        background: #f7e738;
+        color: #333;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 0px;
+        text-align: center;
+    }
+
+    .waktu-head {
+        margin-bottom: -1.2pc;
+        visibility: hidden;
+    }
+}
+
+/*---------- MEDIA 768px ----------*/
+@media (max-width: 768px) {
+    #loader {
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        opacity: 0.8;
+        filter: alpha(opacity=80);
+        /* For IE8 and earlier */
+    }
+
+    .img-loader {
+        position: relative;
+        top: 30%;
+        text-align: center;
+    }
+
+    .image-lod {
+        width: 80%;
+    }
+
+    .biling {
+        background: #f7e738;
+        color: #333;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 0px;
+        text-align: center;
+    }
+
+    .waktu-head {
+        margin-bottom: -1.2pc;
+        visibility: hidden;
+    }
+}
+
+/*---------- MEDIA 480px ----------*/
+@media (max-width: 480px) {
+    #loader {
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        opacity: 0.8;
+        filter: alpha(opacity=80);
+        /* For IE8 and earlier */
+    }
+
+    .img-loader {
+        position: relative;
+        top: 27%;
+        text-align: center;
+    }
+
+    .image-lod {
+        width: 100%;
+    }
+
+    .biling {
+        background: #f7e738;
+        color: #333;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 0px;
+        text-align: center;
+    }
+
+    .waktu-head {
+        margin-bottom: -1.2pc;
+        visibility: hidden;
+    }
+
+    #img-profil {
+        visibility: hidden;
+        margin: 0px;
+    }
+}
